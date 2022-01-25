@@ -20,7 +20,7 @@ const About = () => {
         An Objective oriented Programmer who wants to come out of the loop to satisfy the 'If' condition of the life without a break.
         </p>
         <p className="a-desc">
-          Self taught programmer with demonstrated history of working in engineering field and a bachelor's degree in Mechanical engineering.
+          Self taught programmer with demonstrated history of working in IT field with a bachelor's degree in Mechanical engineering.
         </p>
         <div className="a-award">
           <img src={Award} alt="" className="a-award-img" />

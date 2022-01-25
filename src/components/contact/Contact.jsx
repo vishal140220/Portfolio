@@ -3,8 +3,8 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import Twitter from "../../img/twitter.png";
-import Facebook from "../../img/facebook.jpg";
 import Linkedin from "../../img/linkedin.png";
+import {FaFacebookSquare} from 'react-icons/fa';
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
@@ -44,7 +44,8 @@ const Contact = () => {
 					<h1 className="c-title">Let's discuss your project</h1>
 					<div className="c-info">
 						<div className="c-info-item">
-							<img src={Phone} alt="" className="c-icon" />
+						<a href="https://api.whatsapp.com/send?phone=917598403369&text=Hello%20Vishal" target="_blank">
+							<img src={Phone} alt="" className="c-icon" /></a>
 							+91 7598403369
 						</div>
 						<div className="c-info-item">
@@ -52,7 +53,8 @@ const Contact = () => {
 							p.vishal140220@gmail.com
 						</div>
 						<div className="c-info-item">
-							<img className="c-icon" src={Address} alt="" />
+						<a href="https://goo.gl/maps/rnRrYEyDeRkm9t2u7" target="_blank">
+							<img className="c-icon" src={Address} alt="" /></a>
 							Coimbatore, Tamil Nadu.
 						</div>
 						<div className="c-info-item">
@@ -62,7 +64,7 @@ const Contact = () => {
 						</div>
             <div className="c-info-item">
 							<a href="https://www.facebook.com/vishal140220" target="_blank">
-								<img className="c-icon" src={Facebook} alt="" /></a>
+							<FaFacebookSquare className="c-icon"/></a>
                 Click here to see my FB posts!
 						</div>
             <div className="c-info-item">
