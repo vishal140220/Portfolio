@@ -4,7 +4,7 @@ import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import Twitter from "../../img/twitter.png";
 import Linkedin from "../../img/linkedin.png";
-import {FaFacebookSquare} from 'react-icons/fa';
+import { FaFacebookSquare } from "react-icons/fa";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
@@ -33,7 +33,7 @@ const Contact = () => {
 					console.log(error.text);
 				}
 			);
-			e.target.reset()
+		e.target.reset();
 	};
 
 	return (
@@ -44,33 +44,46 @@ const Contact = () => {
 					<h1 className="c-title">Let's discuss your project</h1>
 					<div className="c-info">
 						<div className="c-info-item">
-						<a href="https://api.whatsapp.com/send?phone=917598403369&text=Hello%20Vishal" target="_blank">
-							<img src={Phone} alt="" className="c-icon" /></a>
-							+91 7598403369
+							<a
+								href="https://api.whatsapp.com/send?phone=917598403369&text=Hello%20Vishal"
+								target="_blank"
+							>
+								<img src={Phone} alt="" className="c-icon" />
+							</a>
+							<div className="c-info-desc">+91 7598403369</div>
 						</div>
 						<div className="c-info-item">
-							<img className="c-icon" src={Email} alt="" />
-							p.vishal140220@gmail.com
+							<a href="mailto:p.vishal140220@gmail.com" target="_blank">
+								<img className="c-icon" src={Email} alt="" />
+							</a>
+							<div className="c-info-desc">p.vishal140220@gmail.com</div>
 						</div>
 						<div className="c-info-item">
-						<a href="https://goo.gl/maps/rnRrYEyDeRkm9t2u7" target="_blank">
-							<img className="c-icon" src={Address} alt="" /></a>
-							Coimbatore, Tamil Nadu.
+							<a href="https://goo.gl/maps/rnRrYEyDeRkm9t2u7" target="_blank">
+								<img className="c-icon" src={Address} alt="" />
+							</a>
+							<div className="c-info-desc">Coimbatore, Tamil Nadu.</div>
 						</div>
 						<div className="c-info-item">
 							<a href="https://twitter.com/_iamvishal__" target="_blank">
-								<img className="c-icon" src={Twitter} alt="" /></a>
-                Click here to see my tweets!
+								<img className="c-icon" src={Twitter} alt="" />
+							</a>
+							<div className="c-info-desc">Click here to see my tweets!</div>
 						</div>
-            <div className="c-info-item">
+						<div className="c-info-item">
 							<a href="https://www.facebook.com/vishal140220" target="_blank">
-							<FaFacebookSquare className="c-icon"/></a>
-                Click here to see my FB posts!
+								<FaFacebookSquare className="c-icon" />
+							</a>
+							<div className="c-info-desc">Click here to see my FB posts!</div>
 						</div>
-            <div className="c-info-item">
-							<a href="https://www.linkedin.com/in/vishal-p-6296061a6/" target="_blank">
-								<img className="c-icon" src={Linkedin} alt="" /></a>
-                Connect with me professionally!
+						<div className="c-info-item">
+							<a
+								href="https://www.linkedin.com/in/vishal-p-6296061a6/"
+								target="_blank"
+							>
+								<img className="c-icon" src={Linkedin} alt="" />
+							</a>
+							<div className="c-info-desc">Connect with me professionally!</div>
 						</div>
 					</div>
 				</div>

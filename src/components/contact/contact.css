@@ -88,6 +88,13 @@ button {
     padding: 0px 50px;
     height: 100vh;
   }
+  .c-info-desc{
+    display: none;
+  }
+  .c-left{
+    padding-bottom: 5px;
+    flex:0.5;
+  }
 
   .c-title {
     font-size: 30px;
@@ -99,9 +106,16 @@ button {
     align-items: center;
     justify-content: flex-start;
   }
+  .c-info{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .c-info-item {
     margin: 15px 0px;
     width: 100%;
+    flex: 0 0 33.3333%;
   }
 
   .c-desc {
